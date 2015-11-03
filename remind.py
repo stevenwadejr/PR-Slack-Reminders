@@ -7,7 +7,7 @@ import config
 def make_mentions(users):
     mentions = ''
     for user in users :
-        if user in config.user_map :
+        if user in config.user_map and config.user_map[user] not in config.user_blacklist :
             mentions += '@' + config.user_map[user] + ' '
     return mentions
 

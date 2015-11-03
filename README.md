@@ -15,4 +15,8 @@ channel = 'slack_channel'
 user_map = {
     'github_username' : 'slack_username'
 }
+
+user_blacklist = [
+    'not_this_user'
+]
 ```
